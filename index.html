@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo de roblox</title>
+    <style>
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #1b1d24;
+  color: white;
+}
+
+h2 {
+  color: #ffcc1f;
+  margin-bottom: 15px;
+}
+
+/* DESPLIEGUE EN BLOQUE */
+.bloque {
+  display: block;
+  width: 100%;
+  padding: 30px;
+}
+
+.personaje {
+  width: 200px;
+  margin-top: 15px;
+}
+
+
+.menu {
+  background-color: #ee3b3b;
+  padding: 10px;
+}
+
+.menu div {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+
+.tarjeta {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 260px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #2f7bff;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
+.tabla {
+  display: table;
+  width: 100%;
+}
+
+.celda {
+  display: table-cell;
+  padding: 20px;
+  border: 5px solid rgb(250, 7, 7);
+  text-align: center;
+}
+
+
+.mundos {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.mundo {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #053af7;
+}
+
+.mundo img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+}
+
+
+.taller {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ejemplo {
+  display: flex;
+  width: 250px;
+  height: 270px;
+  margin: 10px;
+  background-color: #272a35;
+  border: 2px dashed white;
+}
+
+.ladrillo {
+  width: 60px;
+  height: 60px;
+  margin: 6px;
+}
+
+.c1 { flex-flow: row wrap; }
+.c2 { flex-flow: row-reverse wrap-reverse; }
+.c3 { flex-flow: column wrap; }
+.c4 { flex-flow: column-reverse wrap-reverse; }
+
+    </style>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Roblox</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- MENÚ: inline-block -->
+  <div class="menu">
+    <div>Inicio</div>
+    <div>Experiencias</div>
+    <div>Ficha</div>
+    <div>Mundos</div>
+    <div>Taller</div>
+  </div>
+
+  <!-- BLOQUE -->
+  <header class="bloque">
+    <h1>Catálogo Roblox</h1>
+    <p>Roblox es una plataforma donde los jugadores crean y juegan mundos hechos de bloques.</p>
+    <img class="personaje" src="https://i.pinimg.com/474x/c9/31/e8/c931e81bcb1f1fd8be4d21e675dd57cb.jpg" alt="Personaje de Roblox">
+  </header>
+
+  <section class="bloque">
+    <h2>¿Qué es Roblox?</h2>
+    <p>No es un solo juego, son millones de experiencias creadas por la comunidad. Se juega en computadora, celular y consola.</p>
+  </section>
+
+  <!-- TARJETAS: inline-block -->
+  <section class="bloque">
+    <h2>Tipos de experiencias</h2>
+    <article class="tarjeta">
+      <img src="https://tr.rbxcdn.com/180DAY-49e22823cd88c4990605f3ba0bc94bcd/500/280/Image/Jpeg/noFilter" alt="Obby">
+      <h3>Obby</h3>
+      <p>Carreras de obstáculos.</p>
+    </article>
+    <article class="tarjeta">
+      <img src="https://tr.rbxcdn.com/180DAY-b973133039b30da2e7ba1ec2e34463c0/768/432/Image/Webp/noFilter" alt="Adopt Me">
+      <h3>Simulador</h3>
+      <p>Adopt Me: cuida y colecciona mascotas.</p>
+    </article>
+    <article class="tarjeta">
+      <img src="https://olagg.io/cdn-cgi/image/quality=84,width=1200/https://static-lac-ifonelab-net.oss-cn-hongkong.aliyuncs.com/soonlab/admin/article/97e5c00d5a97fe4fe47445aab14a58eb6a30efaacbca0.webp" alt="Rol de terror">
+      <h3>Rol de terror</h3>
+      <p>Historias y sustos con amigos.</p>
+    </article>
+    <article class="tarjeta">
+      <img src="https://i.blogs.es/420fdc/blox/450_1000.webp" alt="Combate">
+      <h3>Combate</h3>
+      <p>Poderes, peleas y jefes.</p>
+    </article>
+  </section>
+
+  <!-- FICHA: table-cell -->
+  <section class="bloque">
+    <h2>Ficha técnica</h2>
+    <div class="tabla">
+      <div class="celda">Creador: Roblox Corporation</div>
+      <div class="celda">Año: 2006</div>
+      <div class="celda">Plataformas: PC, móvil y consola</div>
+      <div class="celda">Moneda: Robux</div>
+    </div>
+  </section>
+
+  <!-- MUNDOS: flex -->
+  <section class="bloque">
+    <h2>Mundos</h2>
+    <div class="mundos">
+      <div class="mundo">
+        <img src="https://i.blogs.es/9879cc/natural-disaster-survival/650_1200.jpg" alt="Aventura">
+        <h3>Aventura</h3>
+      </div>
+      <div class="mundo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTG4V8ZGXnOdqAzA5awAw2k2OeoM_vo9erFkoJ05o4SqutccwwtpTbvx2r&s=10" alt="Ciudad">
+        <h3>Ciudad</h3>
+      </div>
+      <div class="mundo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm9Phy5JaLhn3x3xa2yLWO-4FqcmRQGU0_XEyaEQAzLV17EDRNTq2oXo4A&s=10" alt="Terror">
+        <h3>Terror</h3>
+      </div>
+      <div class="mundo">
+        <img src="https://i.blogs.es/fe7f57/car-dealership-tycoon/450_1000.jpg" alt="Carreras">
+        <h3>Carreras</h3>
+      </div>
+      <div class="mundo">
+        <img src="https://tr.rbxcdn.com/180DAY-824f65550b4f44cbbd2c37546283f057/768/432/Image/Webp/noFilter" alt="Construcción">
+        <h3>Construcción</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- TALLER: flex-direction, flex-wrap y flex-flow -->
+  <section class="bloque">
+    <h2>Taller de ladrillos</h2>
+    <div class="taller">
+      <div class="ejemplo c1">
+        <img class="ladrillo" src="img/espada.svg" alt="Espada">
+        <img class="ladrillo" src="img/gema.svg" alt="Gema">
+        <img class="ladrillo" src="img/llave.svg" alt="Llave">
+        <img class="ladrillo" src="img/moneda.svg" alt="Moneda">
+      </div>
+      <div class="ejemplo c2">
+        <img class="ladrillo" src="img/espada.svg" alt="Espada">
+        <img class="ladrillo" src="img/gema.svg" alt="Gema">
+        <img class="ladrillo" src="img/llave.svg" alt="Llave">
+        <img class="ladrillo" src="img/moneda.svg" alt="Moneda">
+      </div>
+      <div class="ejemplo c3">
+        <img class="ladrillo" src="img/espada.svg" alt="Espada">
+        <img class="ladrillo" src="img/gema.svg" alt="Gema">
+        <img class="ladrillo" src="img/llave.svg" alt="Llave">
+        <img class="ladrillo" src="img/moneda.svg" alt="Moneda">
+      </div>
+      <div class="ejemplo c4">
+        <img class="ladrillo" src="img/espada.svg" alt="Espada">
+        <img class="ladrillo" src="img/gema.svg" alt="Gema">
+        <img class="ladrillo" src="img/llave.svg" alt="Llave">
+        <img class="ladrillo" src="img/moneda.svg" alt="Moneda">
+      </div>
+    </div>
+  </section>
+
+  <footer class="bloque">
+    <p></p>
+  </footer>
+
+</body>
+</html>
+</body>
+</html>
